@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap");
+
+/* text styles css*/
+
+/* text in logo section */
+.nav-logo {
+  font-family: "Zain";
+  font-size: 30px;
+}
+
+/* use font family zain from google fonts */
+.font-zain {
+  font-family: "Zain";
+}
+
+/* main text is present in header */
+.main-text {
+  font-family: "Zain", sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+/* other texts like discriptions */
+.sub-text {
+  font-family: "Zain", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.chip-text {
+  font-size: 16px;
+}
