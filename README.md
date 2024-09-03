@@ -8,3 +8,5 @@ FOllowed ( Only Frontend )
 -- Icons from fontawsome CDN,
 -- Font Zain from google fonts,
 -- Images with proper alt atributes
+
+-- 👁️ live link -> https://nvgauravrd.github.io/simple-portfolio-gauravnv/
