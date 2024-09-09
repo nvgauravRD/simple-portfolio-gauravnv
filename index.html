@@ -320,6 +320,19 @@
 
         <h5 class="nav-logo">Love to hear from you</h5>
 
+        <!-- Status Box of the contact form  -->
+        <section
+          class="p-2 w-fit px-3 flex items-center rounded mb-2 hidden"
+          id="contact_message_status"
+        >
+          <p class="font-zain">
+            <i class="fas mr-1 text-xs" id="contact_message_status_icon"></i>
+            <span id="contact_message_status_message"
+              >Error While sending message</span
+            >
+          </p>
+        </section>
+
         <form class="flex flex-wrap items-center">
           <section
             class="flex flex-col w-[350px] ml-0 w-[45%] mr-1 max-sm:w-full"
@@ -329,6 +342,7 @@
               type="text"
               class="text-sm p-2 bg-gray-100"
               placeholder="John Doe"
+              id="name"
             />
           </section>
           <section class="flex flex-col w-[45%] max-sm:w-full max-sm:my-5">
@@ -337,18 +351,20 @@
               type="text"
               class="text-sm p-2 bg-gray-100"
               placeholder="johndoe@email.com"
+              id="email"
             />
           </section>
 
           <section class="flex flex-col mt-2 w-[90%] max-sm:w-full">
             <label class="font-zain">Your Message</label>
-            <textarea class="bg-gray-100 p-2 font-zain h-40">
+            <textarea class="bg-gray-100 p-2 font-zain h-40" id="message">
 Hello, We would like to work with you...</textarea
             >
           </section>
         </form>
         <button
           class="bg-black text-gray-300 p-2 text-sm rounded mt-2 w-60 max-sm:w-full max-sm:my-5"
+          id="sendMessage"
         >
           Send Message
         </button>
@@ -360,5 +376,7 @@ Hello, We would like to work with you...</textarea
       @2024 Gaurav N V
       <span class="block">Built by using tailwind</span>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
