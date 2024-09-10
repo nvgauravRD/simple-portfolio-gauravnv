@@ -34,7 +34,18 @@ function Fetch_Contact_Form_Details() {
   const contactor_email = document.getElementById("email").value;
   const contactor_message = document.getElementById("message").value;
 
-  console.log({ contactor_name, contactor_email, contactor_message });
+  // console.log({ contactor_name, contactor_email, contactor_message });
+
+  if (
+    contactor_email === "" ||
+    contactor_name === "" ||
+    contactor_message === ""
+  ) {
+    Create_Contact_Message_Status("Please fill all the Details", "Error");
+    return 0;
+  }
+
+  return 1;
 }
 
 // getting the form submission button
@@ -43,7 +54,7 @@ const sendMessagebutton = document.getElementById("sendMessage");
 // listening to click actions
 sendMessagebutton.addEventListener("click", () => {
   // getting the contact form details
-  Fetch_Contact_Form_Details();
   // creating simple status of success type
-  Create_Contact_Message_Status("Message Sent Successfully!!", "Success");
+  if (Fetch_Contact_Form_Details())
+    Create_Contact_Message_Status("Message Sent Successfully!!", "Success");
 });

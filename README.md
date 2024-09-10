@@ -1,4 +1,4 @@
-A simple HTMl, CSS and Tailwind portfolio website without JS. 
+A simple HTMl, CSS and Tailwind portfolio website
 
 FOllowed ( Only Frontend )
 -- Made efficient use of semantic elements,
